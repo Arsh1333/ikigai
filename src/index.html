@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <title>KYI</title>
+  <body class="bg-charcoalsModified overflow-y-auto">
+    <div class="flex p-16">
+      <img src="../ikiImg.png" class="size-16 pt-4 pr-6 scale-110" alt="" />
+      <h1 class="text-3xl text-slate-100 sm:pl-3 pt-3 font-lato font-bold">
+        KNOW YOUR IKIGAI
+      </h1>
+    </div>
+    <h1 class="text-3xl text-slate-400 pl-[60px] pr-10 font-merriweather">
+      Answer the following questions based on your truest instincts and find
+      your best path.
+      <span class="text-slate-50 font-lato font-extrabold">Start Now</span> 👇
+    </h1>
+    <hr class="mt-10 ml-9 mr-9" />
+    <form class="mt-16" action="">
+      <label for="">
+        <p class="text-2xl text-slate-200 pl-[40px] pr-10 font-merriweather">
+          What activities make you feel most alive and fulfilled? (Use commas
+          ',' after each activity)
+        </p>
+      </label>
+      <textarea
+        id="passions"
+        name="passions"
+        rows="4"
+        required
+        class="w-[400px] ml-10 mr-10 mt-4 bg-charcoalsModified text-slate-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      ></textarea>
+      <label for="">
+        <p
+          class="text-2xl mt-14 text-slate-200 pl-[40px] pr-10 font-merriweather"
+        >
+          What are your top 3 skills? (Use commas ',' after each skill)
+        </p>
+      </label>
+      <textarea
+        id="skills"
+        rows="4"
+        required
+        class="w-[400px] ml-10 mr-10 mt-4 bg-charcoalsModified text-slate-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      ></textarea>
+      <label for="">
+        <p
+          class="text-2xl mt-14 text-slate-200 pl-[40px] pr-10 font-merriweather"
+        >
+          What impact do you want to have on the world?
+        </p>
+      </label>
+      <textarea
+        id="impact"
+        rows="4"
+        required
+        class="w-[400px] ml-10 mr-10 mt-4 bg-charcoalsModified text-slate-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      ></textarea>
+      <div>
+        <label for="">
+          <p
+            class="text-2xl mt-14 text-slate-200 pl-[40px] pr-10 font-merriweather"
+          >
+            What values are most important to you?
+          </p>
+        </label>
+        <textarea
+          id="values"
+          rows="4"
+          required
+          class="w-[400px] ml-10 mr-10 mt-4 bg-charcoalsModified text-slate-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+      </div>
+      <button
+        id="submit-btn"
+        class="bg-emraldGreen text-white p-2 rounded-xl mt-7 ml-10 mb-10 w-24"
+      >
+        Results
+      </button>
+    </form>
+
+    <dialog>
+      <button autofocus class="mr-[20px]">X</button>
+      <p class="ml-[20px] mr-[10px]">
+        This modal dialog has a groovy backdrop!
+      </p>
+      <div class="relative w-64 h-64 mx-auto mt-10">
+        <div
+          class="absolute w-32 h-32 bg-red-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-8 left-0"
+        >
+          Passions
+        </div>
+        <div
+          class="absolute w-32 h-32 bg-green-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-8 left-16"
+        >
+          Skills
+        </div>
+        <div
+          class="absolute w-32 h-32 bg-blue-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-24 left-8"
+        >
+          Values
+        </div>
+        <div
+          class="absolute w-32 h-32 bg-yellow-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-16 left-8"
+        >
+          Mission
+        </div>
+      </div>
+    </dialog>
+  </body>
+  <script src="script.js"></script>
+</html>
