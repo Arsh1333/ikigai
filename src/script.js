@@ -28,3 +28,63 @@ btn.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   dialog.close();
 });
+let resultTxt = document.querySelector(".resultTxt");
+let passionsCircle = document.querySelector(".passions-circle");
+let skillsCircle = document.querySelector(".skills-circle");
+let valuesCircle = document.querySelector(".values-circle");
+let missionsCircle = document.querySelector(".missions-circle");
+// console.log(passionsCircle);
+passionsCircle.addEventListener("click", () => {
+  // console.log("circle clicked");
+  passionsCircle.style.backgroundColor = "red";
+  let passionsArray = passions.value.split(",");
+  if (passionsArray.includes("")) {
+    console.log("Error occured , check input");
+  }
+  console.log(...passionsArray);
+  let passionsArrayElements = [...passionsArray];
+  resultTxt.innerHTML = passionsArrayElements;
+  console.log(resultTxt.innerHTML);
+});
+skillsCircle.addEventListener("click", () => {
+  // console.log("circle clicked");
+  skillsCircle.style.backgroundColor = "green";
+  let skillsArray = skills.value.split(",");
+  if (skillsArray.includes("")) {
+    console.log("Error occured , check input");
+  }
+  console.log(...skillsArray);
+  let skillsArrayElements = [...skillsArray];
+  resultTxt.innerHTML = skillsArrayElements;
+  console.log(resultTxt.innerHTML);
+});
+valuesCircle.addEventListener("click", () => {
+  // console.log("circle clicked");
+  let valArray = values.value.split(",");
+  console.log(valArray);
+  if (valArray.includes("")) {
+    console.log("Error occured , check input");
+  }
+  console.log(...valArray);
+  let valArrayElements = [...valArray];
+  resultTxt.innerHTML = valArrayElements;
+  console.log(resultTxt.innerHTML);
+  valuesCircle.style.backgroundColor = "blue";
+});
+missionsCircle.addEventListener("click", () => {
+  // console.log("circle clicked");
+  let impactArray = impact.value.split(",");
+  if (impactArray.includes("")) {
+    console.log("Error occured , check input");
+  }
+  console.log(...impactArray);
+  let impactArrayElements = [...impactArray];
+  resultTxt.innerHTML = impactArrayElements;
+  console.log(resultTxt.innerHTML);
+  missionsCircle.style.backgroundColor = "light-yellow";
+});
+
+//1. collect the data from array
+//2. when circle of respective question is clicked , return array values in dialog box
+//3. when a different circle is clicked color of selected circle must be made to initial color
+//4. when same circle clicked 2x clicked color of selected circle must be made to initial color and returned array must be removed

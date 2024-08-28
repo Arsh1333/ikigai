@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
   </head>
   <title>KYI</title>
@@ -13,7 +14,9 @@
         KNOW YOUR IKIGAI
       </h1>
     </div>
-    <h1 class="text-3xl text-slate-400 pl-[60px] pr-10 font-merriweather">
+    <h1
+      class="text-3xl text-slate-400 pr-10 pl-[60px] sm:w-[1150px] min-[340px]:w-[500px] font-merriweather"
+    >
       Answer the following questions based on your truest instincts and find
       your best path.
       <span class="text-slate-50 font-lato font-extrabold">Start Now</span> 👇
@@ -21,7 +24,9 @@
     <hr class="mt-10 ml-9 mr-9" />
     <form class="mt-16" action="">
       <label for="">
-        <p class="text-2xl text-slate-200 pl-[40px] pr-10 font-merriweather">
+        <p
+          class="text-2xl text-slate-200 pl-[40px] pr-10 font-merriweather sm:w-[1150px] min-[340px]:w-[500px]"
+        >
           What activities make you feel most alive and fulfilled? (Use commas
           ',' after each activity)
         </p>
@@ -35,7 +40,7 @@
       ></textarea>
       <label for="">
         <p
-          class="text-2xl mt-14 text-slate-200 pl-[40px] pr-10 font-merriweather"
+          class="text-2xl mt-14 text-slate-200 pl-[40px] pr-10 font-merriweather sm:w-[1150px] min-[340px]:w-[500px]"
         >
           What are your top 3 skills? (Use commas ',' after each skill)
         </p>
@@ -48,9 +53,9 @@
       ></textarea>
       <label for="">
         <p
-          class="text-2xl mt-14 text-slate-200 pl-[40px] pr-10 font-merriweather"
+          class="text-2xl mt-14 text-slate-200 pl-[40px] pr-10 font-merriweather sm:w-[1150px] min-[340px]:w-[500px]"
         >
-          What impact do you want to have on the world?
+          What the world needs?(Use commas ',' )
         </p>
       </label>
       <textarea
@@ -62,9 +67,9 @@
       <div>
         <label for="">
           <p
-            class="text-2xl mt-14 text-slate-200 pl-[40px] pr-10 font-merriweather"
+            class="text-2xl mt-14 text-slate-200 pl-[40px] pr-10 font-merriweather sm:w-[1150px] min-[340px]:w-[500px]"
           >
-            What values are most important to you?
+            What you can be paid for?(Use commas ',')
           </p>
         </label>
         <textarea
@@ -87,24 +92,25 @@
       <p class="ml-[20px] mr-[10px]">
         This modal dialog has a groovy backdrop!
       </p>
+      <p class="resultTxt ml-[20px] mr-[10px]">No results to show</p>
       <div class="relative w-64 h-64 mx-auto mt-10">
         <div
-          class="absolute w-32 h-32 bg-red-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-8 left-0"
+          class="passions-circle absolute w-32 h-32 bg-red-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-8 left-0"
         >
           Passions
         </div>
         <div
-          class="absolute w-32 h-32 bg-green-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-8 left-16"
+          class="skills-circle absolute w-32 h-32 bg-green-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-8 left-16"
         >
           Skills
         </div>
         <div
-          class="absolute w-32 h-32 bg-blue-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-24 left-8"
+          class="values-circle absolute w-32 h-32 bg-blue-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-24 left-8"
         >
           Values
         </div>
         <div
-          class="absolute w-32 h-32 bg-yellow-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-16 left-8"
+          class="missions-circle absolute w-32 h-32 bg-yellow-500 bg-opacity-50 rounded-full flex items-center justify-center text-white font-bold text-center top-16 left-8"
         >
           Mission
         </div>
