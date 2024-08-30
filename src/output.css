@@ -682,14 +682,6 @@ video {
   width: 400px;
 }
 
-.w-\[1150px\]{
-  width: 1150px;
-}
-
-.w-\[200px\]{
-  width: 200px;
-}
-
 .scale-110{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -771,10 +763,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-20{
-  padding: 5rem;
-}
-
 .pl-\[40px\]{
   padding-left: 40px;
 }
@@ -797,22 +785,6 @@ video {
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pr-3{
-  padding-right: 0.75rem;
-}
-
-.pr-20{
-  padding-right: 5rem;
-}
-
-.pr-\[200px\]{
-  padding-right: 200px;
-}
-
-.pl-\[200px\]{
-  padding-left: 200px;
 }
 
 .text-center{
@@ -886,104 +858,18 @@ video {
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
 
-@media (max-width: 320px){
-  .max-\[320px\]\:w-\[480px\]{
-    width: 480px;
-  }
-}
-
-@media (min-width: 320px){
-  .min-\[320px\]\:w-5{
-    width: 1.25rem;
-  }
-
-  .min-\[320px\]\:w-\[500px\]{
-    width: 500px;
-  }
-
-  .min-\[320px\]\:w-\[400px\]{
-    width: 400px;
-  }
-
-  .min-\[320px\]\:w-\[480px\]{
-    width: 480px;
-  }
-
-  .min-\[320px\]\:w-\[4800px\]{
-    width: 4800px;
-  }
-
-  .min-\[320px\]\:pr-4{
-    padding-right: 1rem;
-  }
-
-  .min-\[320px\]\:text-slate-600{
-    --tw-text-opacity: 1;
-    color: rgb(71 85 105 / var(--tw-text-opacity));
-  }
-}
-
 @media (min-width: 340px){
-  .min-\[340px\]\:w-full{
-    width: 100%;
-  }
-
-  .min-\[340px\]\:w-\[300px\]{
-    width: 300px;
-  }
-
-  .min-\[340px\]\:w-\[3000px\]{
-    width: 3000px;
-  }
-
   .min-\[340px\]\:w-\[500px\]{
     width: 500px;
-  }
-
-  .min-\[340px\]\:w-fit{
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  .min-\[340px\]\:w-\[400px\]{
-    width: 400px;
-  }
-
-  .min-\[340px\]\:w-\[5000px\]{
-    width: 5000px;
   }
 }
 
 @media (min-width: 640px){
-  .sm\:w-\[1270px\]{
-    width: 1270px;
-  }
-
-  .sm\:w-\[1200px\]{
-    width: 1200px;
-  }
-
-  .sm\:w-\[1000px\]{
-    width: 1000px;
-  }
-
-  .sm\:w-\[1100px\]{
-    width: 1100px;
-  }
-
   .sm\:w-\[1150px\]{
     width: 1150px;
   }
 
   .sm\:pl-3{
     padding-left: 0.75rem;
-  }
-
-  .sm\:pr-10{
-    padding-right: 2.5rem;
-  }
-
-  .sm\:pr-4{
-    padding-right: 1rem;
   }
 }

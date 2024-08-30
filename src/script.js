@@ -83,8 +83,3 @@ missionsCircle.addEventListener("click", () => {
   console.log(resultTxt.innerHTML);
   missionsCircle.style.backgroundColor = "light-yellow";
 });
-
-//1. collect the data from array
-//2. when circle of respective question is clicked , return array values in dialog box
-//3. when a different circle is clicked color of selected circle must be made to initial color
-//4. when same circle clicked 2x clicked color of selected circle must be made to initial color and returned array must be removed
